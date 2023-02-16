@@ -1,0 +1,59 @@
+
+[
+    {
+        "key": "group_60ec23aac1772",
+        "title": "Service Area",
+        "fields": [
+            {
+                "key": "field_60ec242a73305",
+                "label": "Description",
+                "name": "service_area_description",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Our <a href=\"[cvgt-cta-link]\">Career Transition Assistance program<\/a> helps mature-aged job seekers build confidence, apply for jobs and become more competitive in the [cvgt-location-name] labour market.",
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "gd_placecategory"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    }
+]

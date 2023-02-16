@@ -1,0 +1,159 @@
+@import "_variables.scss";
+
+// Main Container
+.office-location {
+	display: grid;
+	grid-template-columns:  1fr minmax( auto, 400px ) 1fr;
+	grid-gap: 30px;
+	margin-bottom: 50px;
+	text-align: left;
+
+	.office-title {
+		margin: 0;
+	}
+
+	&:not(:first-child) {
+		padding-top: 40px;
+		border-top: 2px solid $blue;
+	}
+
+	.grid-width-title {
+		grid-column: 1/-1;
+	}
+	
+}
+
+// Address details div
+.adressdet,
+.openhours {
+	margin: 0;
+
+	h5 {
+		margin: 15px 0;
+	}
+}
+
+.adressdet {
+	span {
+		color: $red;
+	}
+}
+
+.cvgt-hidden {
+	display: flex;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+// Office buttons
+.office-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	a {
+		background-color: $blue;
+		padding: 14px 25px;
+		text-align: center;
+		color: $white;
+		margin: 20px;
+
+		&:hover {
+			background-color: $red;
+		}
+	}
+}
+
+// map container
+.acf-map {
+	width: 100%;
+	height: 450px;
+}
+
+// Responsiveness definitions
+@media only screen and (max-width: 1280px) {
+
+	.office-location {
+		display: grid;
+		grid-template-columns:  1fr minmax( auto, 400px );
+	}
+
+	.acf-map {
+		order: 3;
+	}
+
+	.pre-map {
+		order: 4;
+	}
+
+	.office-blurb {
+		order: 1;
+		grid-column: 1/-1;
+	}
+}
+
+// mobile phone screens
+@media only screen and (max-width: 900px) {
+	// Main Container
+	.office-location {
+		display: grid;
+		grid-template-columns:  1fr 250px;
+		grid-gap: 30px;
+		margin-bottom: 50px;
+	}
+}
+
+// mobile phone screens
+@media only screen and (max-width: 620px) {
+	// Main Container
+	.office-location {
+		display: grid;
+		grid-template-columns:  1fr;
+	}
+
+	.acf-map {
+		grid-column: 1/-1;
+		order: 4;
+	}
+
+	.pre-map {
+		order: 3;
+	}
+
+	.office-blurb {
+		order: 2;
+	}
+
+}
+
+// Info window for individual office location
+.map_info_wrapper {
+	a {
+		display: inline;
+		padding: 12px 0px;
+	}
+}
+
+// Get directions  button
+.directions {
+	border: none;
+	border-radius: 0px;
+	display: inline-block;
+	cursor: pointer;
+	opacity: 1;
+	background: var(--paletteColor1);
+	padding: 8px 26px;
+	line-height: 1.5!important;
+	align-items: center;
+	font-size: 1em;
+	position: relative;
+	color: $white;
+	margin: 30px 0;
+	
+	&:hover {
+		background-color: $red;
+		color: $white;
+	}
+}

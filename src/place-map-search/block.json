@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "mrkwp/porta-place-map-search",
+    "version": "0.1.0",
+    "title": "Porta Places Map",
+    "category": "widgets",
+    "icon": "location",
+    "description": "Display Porta Places.",
+    "supports": {
+      "html": false
+    },
+    "attributes": {
+        "serviceArea": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "textdomain": "porta-places",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}

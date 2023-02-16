@@ -1,0 +1,16 @@
+{
+    "name": "mrkwp/porta-places",
+    "description": "Porta Places Plugin by MRK Development",
+    "type": "project",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "MRK Development",
+            "email": "support@diviframework.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Porta_Places\\": "./core"}
+    }
+}

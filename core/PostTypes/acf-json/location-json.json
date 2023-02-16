@@ -1,0 +1,62 @@
+[
+    {
+        "key": "group_6087a410bf251",
+        "title": "Location Information",
+        "fields": [
+            {
+                "key": "field_6087a42f9dff9",
+                "label": "Offices At This Location",
+                "name": "location",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "gd_place"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "locations"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image"
+        ],
+        "active": true,
+        "description": ""
+    }
+]
